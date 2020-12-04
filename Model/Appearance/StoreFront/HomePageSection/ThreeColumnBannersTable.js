@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const ThreeColumnBannersTable = new mongoose.Schema({  
-    ThreeColumn_Id :
-    {
-        type: String,
-        required : true
-    },   
+const ThreeColumnBannersTable = new mongoose.Schema({     
     SectionStatus :
     {
         type: String,

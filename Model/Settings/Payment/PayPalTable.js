@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const PayPalTable = new mongoose.Schema({     
-    PayPal_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,

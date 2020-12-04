@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const SettingCurrencyTable = new mongoose.Schema({   
-    Currency_Id :
-    {
-        type: String,
-        required : true
-    },  
+const SettingCurrencyTable = new mongoose.Schema({     
     SupportedCurrencies :
     {
         type: String,

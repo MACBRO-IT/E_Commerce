@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const SettingLocalPickupTable = new mongoose.Schema({     
-    Local_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,

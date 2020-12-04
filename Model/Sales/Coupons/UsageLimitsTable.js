@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const CouponsUsageLimitsTable = new mongoose.Schema({     
-    UsageLimit_Id :
-    {
-        type: String,
-        required : true
-    },
     UsageLimitPerCoupon :
     {
         type: String,

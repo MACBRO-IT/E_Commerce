@@ -1,24 +1,28 @@
 const mongoose =require("mongoose");
 
-const CatalogBasicGeneralTable = new mongoose.Schema({     
-    Attribute :
+const Attributes= new mongoose.Schema({
+    Attributes :
     {
+        type: String,  
+    }, 
+    values:{
         type: String,
-        required : true
-    },
-    Values :
-    {
-        type: String,
-        required : true
-    },  
+    }, 
+    createdTime : {
+        type : Date,
+        default : Date.now
+    }    
+})
+
+const CatalogAdvancedAttributesTable = new mongoose.Schema({     
+    Attribute :[Attributes], 
     Product_id :
     {
-        type : String,
-        required :true
+        type : String 
     },   
     createdTime : {
         type : Date,
         default : Date.now
     }    
 })
-module.exports = mongoose.model ("CatalogBasicGeneral",CatalogBasicGeneralTable);
+module.exports = mongoose.model ("CatalogAdvancedAttributes",CatalogAdvancedAttributesTable);

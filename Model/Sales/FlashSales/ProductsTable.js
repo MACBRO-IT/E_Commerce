@@ -1,11 +1,11 @@
 const mongoose =require("mongoose");
 
-const FlashSalesProductTable = new mongoose.Schema({
+const ProductTable = new mongoose.Schema({     
     FlashSale_Id :
     {
         type: String,
-        required : true
-    },     
+       
+    },
     Product :
     {
         type: String,
@@ -26,6 +26,20 @@ const FlashSalesProductTable = new mongoose.Schema({
         type : String,
         required :true
     }, 
+    createdTime : {
+        type : Date,
+        default : Date.now
+    }    
+})
+
+const FlashSalesProductTable = new mongoose.Schema({     
+    Product : [ProductTable],
+    FlashSale_Id :
+    {
+        type : String,
+        
+    }, 
+    
     createdTime : {
         type : Date,
         default : Date.now

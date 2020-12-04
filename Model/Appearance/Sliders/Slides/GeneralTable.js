@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const SlidesGeneralTable = new mongoose.Schema({     
-    Slides_Id :
-    {
-        type: String,
-        required : true
-    },
     Image :
     {
         type: String,

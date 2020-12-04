@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const SettingFacebookTable = new mongoose.Schema({     
-    Fb_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,

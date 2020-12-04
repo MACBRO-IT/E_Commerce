@@ -1,22 +1,24 @@
 const mongoose =require("mongoose");
 
-const AttributesValuesTable = new mongoose.Schema({     
-     
-    Attribute_Id :
-    {
-        type: String,
-        required : true
-    },
-    Value :
-    {
-        type: String,
-        required : true
-    },
+const ValuesTable= new mongoose.Schema({
     
+    Value:{
+        type: String,
+    }, 
     createdTime : {
         type : Date,
         default : Date.now
     }    
-
+})
+const AttributesValuesTable = new mongoose.Schema({     
+     
+    Value :[ValuesTable],
+    Attribute_Id : {
+        type: String
+    }, 
+    createdTime : {
+        type : Date,
+        default : Date.now
+    }    
 })
 module.exports = mongoose.model ("AttributesValues",AttributesValuesTable);

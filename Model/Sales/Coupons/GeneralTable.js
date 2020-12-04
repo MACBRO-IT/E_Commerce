@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const CouponsGeneralTable = new mongoose.Schema({ 
-    Coupon_Id :
-    {
-        type: String,
-        
-    },    
+const CouponsGeneralTable = new mongoose.Schema({     
     Name :
     {
         type: String,
@@ -13,7 +8,7 @@ const CouponsGeneralTable = new mongoose.Schema({
     },
     Code :
     {
-        type: String,
+        type: Date,
         required : true
     },
     DiscountType :
@@ -28,8 +23,8 @@ const CouponsGeneralTable = new mongoose.Schema({
     }, 
     FreeShipping :
     {
-        type : String 
-        
+        type : String,
+        required :true
     }, 
     Startdate :
     {
@@ -43,8 +38,8 @@ const CouponsGeneralTable = new mongoose.Schema({
     }, 
     Status :
     {
-        type : String 
-       
+        type : String,
+        required :true
     }, 
     createdTime : {
         type : Date,

@@ -1,7 +1,12 @@
 const mongoose =require("mongoose");
 
-const OptionsValuesTable = new mongoose.Schema({     
+const ValuesTable = new mongoose.Schema({     
     OptionsValue_Id :
+    {
+        type: String,
+        
+    },
+    Label :
     {
         type: String,
         required : true
@@ -17,6 +22,18 @@ const OptionsValuesTable = new mongoose.Schema({
         required : true
     },
     
+    createdTime : {
+        type : Date,
+        default : Date.now
+    }    
+})
+
+const OptionsValuesTable = new mongoose.Schema({     
+     
+    Label :[ValuesTable],
+    Attribute_Id : {
+        type: String
+    }, 
     createdTime : {
         type : Date,
         default : Date.now

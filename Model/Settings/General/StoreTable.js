@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const SettingStoreTable = new mongoose.Schema({     
-    Store_Id :
-    {
-        type: String,
-        required : true
-    },
     Name :
     {
         type: String,

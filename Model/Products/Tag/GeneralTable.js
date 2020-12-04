@@ -1,12 +1,12 @@
 const mongoose =require("mongoose");
 
 const TagGeneralTable = new mongoose.Schema({  
-    Tag_Id :
+    Name :
     {
         type: String,
         required : true
     }, 
-    Name :
+    Tag_Id :
     {
         type: String,
         required : true

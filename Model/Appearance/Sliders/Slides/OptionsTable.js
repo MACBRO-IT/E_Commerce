@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const SlidesOptionsTable = new mongoose.Schema({    
-    Options_Id :
-    {
-        type: String,
-        required : true
-    }, 
+const SlidesOptionsTable = new mongoose.Schema({     
     Delay :
     {
         type: String,

@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const FlashSaleVerticalProductsTable = new mongoose.Schema({    
-    Vertical_Id :
-    {
-        type: String,
-        required : true
-    }, 
+const FlashSaleVerticalProductsTable = new mongoose.Schema({     
     SectionStatus :
     {
         type: String,
@@ -21,82 +16,22 @@ const FlashSaleVerticalProductsTable = new mongoose.Schema({
         type : String,
         required :true
     },
-    Title1 :
-    {
-        type: String,
-        required : true
-    },
-    Type1 :
+    Title :
     {
         type : String,
         required :true
     },
-    Category1 :
+    Type :
     {
         type : String,
         required :true
     },
-    Title2 :
-    {
-        type: String,
-        required : true
-    },
-    Type2 :
+    Category :
     {
         type : String,
         required :true
     },
-    Category2 :
-    {
-        type : String,
-        required :true
-    },
-    Title3 :
-    {
-        type: String,
-        required : true
-    },
-    Type3 :
-    {
-        type : String,
-        required :true
-    },
-    Category3 :
-    {
-        type : String,
-        required :true
-    },
-    Title4 :
-    {
-        type: String,
-        required : true
-    },
-    Type4 :
-    {
-        type : String,
-        required :true
-    },
-    Category4 :
-    {
-        type : String,
-        required :true
-    },
-    Title5 :
-    {
-        type: String,
-        required : true
-    },
-    Type5 :
-    {
-        type : String,
-        required :true
-    },
-    Category5 :
-    {
-        type : String,
-        required :true
-    },
-
+  
     createdTime : {
         type : Date,
         default : Date.now

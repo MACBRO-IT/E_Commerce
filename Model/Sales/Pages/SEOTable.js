@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const PagesSEOTable = new mongoose.Schema({     
-    SEO_Id :
-    {
-        type: String,
-        required : true
-    },
     MetaTitle :
     {
         type: String,

@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const UsersAccountTable = new mongoose.Schema({  
-    Account_Id :
-    {
-        type: String,
-        required : true
-    },   
+const UsersAccountTable = new mongoose.Schema({     
     FirstName :
     {
         type: String,
@@ -13,7 +8,7 @@ const UsersAccountTable = new mongoose.Schema({
     },
     LastName :
     {
-        type: String,
+        type: Date,
         required : true
     },
     Email :

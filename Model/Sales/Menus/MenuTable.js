@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const MenuTable = new mongoose.Schema({  
-    Menu_Id :
-    {
-        type: String,
-        required : true
-    },   
+const MenuTable = new mongoose.Schema({     
     Name :
     {
         type: String,

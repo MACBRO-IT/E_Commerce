@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const StoreFrontFooterTable = new mongoose.Schema({   
-    Footer_Id :
-    {
-        type: String,
-        required : true
-    },  
+const StoreFrontFooterTable = new mongoose.Schema({     
     FooterTags :
     {
         type: String,

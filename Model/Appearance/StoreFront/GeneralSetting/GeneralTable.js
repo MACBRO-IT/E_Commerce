@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const StoreFrontGeneralTable = new mongoose.Schema({     
-    General_Id :
-    {
-        type: String,
-        required : true
-    },
     WelcomeText :
     {
         type: String,

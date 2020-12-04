@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const SettingFreeShippingTable = new mongoose.Schema({     
-    FreeShipping_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,

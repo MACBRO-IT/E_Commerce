@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const ThreeColumnFullWidthBannersTable = new mongoose.Schema({    
-    FullBanner_Id :
-    {
-        type: String,
-        required : true
-    }, 
+const ThreeColumnFullWidthBannersTable = new mongoose.Schema({     
     SectionStatus :
     {
         type: String,

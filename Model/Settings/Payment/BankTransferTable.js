@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const BankTransferTable = new mongoose.Schema({     
-    Bank_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,

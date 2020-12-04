@@ -1,13 +1,6 @@
 const mongoose =require("mongoose");
 
-const AttributesGeneralTable = new mongoose.Schema({  
-
-    Attribute_Id :
-    {
-        type: String,
-        required : true
-    },
-
+const AttributesGeneralTable = new mongoose.Schema({     
     AttributeSet :
     {
         type: String,
@@ -21,7 +14,7 @@ const AttributesGeneralTable = new mongoose.Schema({
     Categories : 
     {
         type: String,
-        required : true
+        
     },
     Filterable : 
     {

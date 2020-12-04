@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const SettingGeneralTable = new mongoose.Schema({     
-    General_Id :
-    {
-        type: String,
-        required : true
-    },
     SupportedCountries :
     {
         type: String,

@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const RazorpayTable = new mongoose.Schema({     
-    Razor_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,

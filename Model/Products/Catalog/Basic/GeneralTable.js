@@ -1,48 +1,93 @@
 const mongoose =require("mongoose");
 
-const CatalogBasicGeneralTable = new mongoose.Schema({     
-    Name :
-    {
-        type: String,
-        required : true
-    },
-    Description :
-    {
-        type: String,
-        required : true
-    },
-    Brand :
-    {
-        type : String,
-        required :true
-    },
-    Categories :
-    {
-        type : String,
-        required :true
-    },
-    TaxClass :
-    {
-        type: String,
-        required : true
-    },
-    Tags :
-    {
-        type: String,
-        required : true
-    },
-    Status :
-    {
-        type : String,
-        required :true
-    }, 
+const CatalogBasicTable = new mongoose.Schema({     
     Product_id :
     {
         type : String  
-    },    
+    }, 
+    Name :
+    {
+        type: String 
+    },
+    Description :
+    {
+        type: String 
+    },
+    Brand :
+    {
+        type : String 
+    },
+    Categories :
+    {
+        type : String 
+    },
+    TaxClass :
+    {
+        type: String  
+    },
+    Tags :
+    {
+        type: String 
+    },
+    Status :
+    {
+        type : String 
+    }, 
+
+    Price :
+    {
+        type: Number 
+    },
+    SpecialPrice :
+    {
+        type: Number 
+    },
+    SpecialPriceType :
+    {
+        type : String 
+    },
+    SpecialPriceStart :
+    {
+        type : String 
+    },
+    SpecialPriceEnd :
+    {
+        type: String 
+    },
+
+    SKU :
+    {
+        type: String 
+    },
+    InventoryManagement :
+    {
+        type: String 
+    },
+    qty : {
+        type: String 
+    },
+    StockAvailability :
+    {
+        type : String,
+        
+    }, 
+
+    MetaURL :
+    {
+        type: String 
+    },
+    MetaTitle :
+    {
+        type: String 
+    },
+    MetaDescription :
+    {
+        type: String 
+    },
+     
     createdTime : {
         type : Date,
         default : Date.now
     }    
 })
-module.exports = mongoose.model ("CatalogBasicGenerals",CatalogBasicGeneralTable);
+module.exports = mongoose.model ("CatalogBasic",CatalogBasicTable);

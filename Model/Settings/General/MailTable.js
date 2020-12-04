@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const SettingMailTable = new mongoose.Schema({    
-    Mail_Id :
-    {
-        type: String,
-        required : true
-    }, 
+const SettingMailTable = new mongoose.Schema({     
     FromAddress :
     {
         type: String,

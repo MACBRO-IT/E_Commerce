@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const SettingFlatRateTable = new mongoose.Schema({  
-    FlatRate_Id :
-    {
-        type: String,
-        required : true
-    },   
+const SettingFlatRateTable = new mongoose.Schema({     
     Status :
     {
         type: String,

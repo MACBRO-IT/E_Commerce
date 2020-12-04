@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const SettingMaintenanceTable = new mongoose.Schema({ 
-    Maintenance_Id :
-    {
-        type: String,
-        required : true
-    },     
+const SettingMaintenanceTable = new mongoose.Schema({     
     MaintenanceMode :
     {
         type: String,

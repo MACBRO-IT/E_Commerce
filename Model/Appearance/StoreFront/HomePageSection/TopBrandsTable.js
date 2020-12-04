@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const TopBrandsTable = new mongoose.Schema({  
-    TopBrand_Id :
-    {
-        type: String,
-        required : true
-    },   
+const TopBrandsTable = new mongoose.Schema({     
     SectionStatus :
     {
         type: String,

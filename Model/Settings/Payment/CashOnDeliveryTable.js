@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const CashOnDeliveryTable = new mongoose.Schema({     
-    Cash_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,

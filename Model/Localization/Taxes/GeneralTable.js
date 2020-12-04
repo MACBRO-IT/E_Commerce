@@ -1,11 +1,11 @@
 const mongoose =require("mongoose");
 
-const TaxesGeneralTable = new mongoose.Schema({    
+const TaxesGeneralTable = new mongoose.Schema({     
     Tax_Id :
     {
         type: String,
         required : true
-    }, 
+    },
     TaxClass :
     {
         type: String,
@@ -13,7 +13,7 @@ const TaxesGeneralTable = new mongoose.Schema({
     },
     BasedOn :
     {
-        type: Date,
+        type: String,
         required : true
     },
     createdTime : {

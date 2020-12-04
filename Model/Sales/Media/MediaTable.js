@@ -1,14 +1,15 @@
 const mongoose =require("mongoose");
 
-const RolesGeneralTable = new mongoose.Schema({     
-    Name :
+const MediaTable = new mongoose.Schema({     
+    Media :
     {
         type: String,
         required : true
-    },    
+    },
+     
     createdTime : {
         type : Date,
         default : Date.now
     }    
 })
-module.exports = mongoose.model ("RolesGeneral",RolesGeneralTable);
+module.exports = mongoose.model ("Media",MediaTable);

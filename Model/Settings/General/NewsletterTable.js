@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const SettingNewsletterTable = new mongoose.Schema({  
-    Newsletter_Id :
-    {
-        type: String,
-        required : true
-    },   
+const SettingNewsletterTable = new mongoose.Schema({     
     Newsletter :
     {
         type: String,

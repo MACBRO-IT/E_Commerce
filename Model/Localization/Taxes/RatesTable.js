@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const TaxesRatesTable = new mongoose.Schema({   
-    Rates_Id :
-    {
-        type: String,
-        required : true
-    },  
+const RatesTable = new mongoose.Schema({     
     TaxName :
     {
         type: String,
@@ -36,6 +31,18 @@ const TaxesRatesTable = new mongoose.Schema({
         type: String,
         required : true
     },
+    createdTime : {
+        type : Date,
+        default : Date.now
+    }    
+})
+
+const TaxesRatesTable = new mongoose.Schema({     
+     
+    TaxName :[RatesTable],
+    Rates_Id : {
+        type: String
+    }, 
     createdTime : {
         type : Date,
         default : Date.now

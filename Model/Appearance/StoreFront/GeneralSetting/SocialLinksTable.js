@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const StoreFrontSocialLinksTable = new mongoose.Schema({   
-    Social_Id :
-    {
-        type: String,
-        required : true
-    },  
+const StoreFrontSocialLinksTable = new mongoose.Schema({     
     Facebook :
     {
         type: String,

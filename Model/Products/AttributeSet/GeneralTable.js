@@ -1,11 +1,7 @@
 const mongoose =require("mongoose");
 
 const AttributeSetGeneralTable = new mongoose.Schema({     
-    AttributeSet_Id :
-    {
-        type: String,
-        required : true
-    },
+    
     Name :
     {
         type: String,

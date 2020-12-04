@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const StoreFrontMenuTable = new mongoose.Schema({ 
-    Menu_Id :
-    {
-        type: String,
-        required : true
-    },    
+const StoreFrontMenuTable = new mongoose.Schema({     
     NavbarText :
     {
         type: String,

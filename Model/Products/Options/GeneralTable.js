@@ -14,12 +14,12 @@ const OptionsGeneralTable = new mongoose.Schema({
     Type : 
     {
         type: String,
-        required : true
+       
     },
     Required : 
     {
         type: String,
-        required : true
+       
     },
     createdTime : {
         type : Date,

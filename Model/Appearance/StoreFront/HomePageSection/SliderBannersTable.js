@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const SliderBannerTable = new mongoose.Schema({   
-    Slider_Id :
-    {
-        type: String,
-        required : true
-    },  
+const SliderBannerTable = new mongoose.Schema({     
     CalltoActionURL :
     {
         type: String,

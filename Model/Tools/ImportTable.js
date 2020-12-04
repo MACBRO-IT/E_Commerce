@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const ImportTable = new mongoose.Schema({    
-    Import_Id :
-    {
-        type: String,
-        required : true
-    }, 
+const ImportTable = new mongoose.Schema({     
     CSVFile :
     {
         type: String,

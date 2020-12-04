@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const PagesGeneralTable = new mongoose.Schema({  
-    Pages_Id :
-    {
-        type: String,
-        required : true
-    },   
+const PagesGeneralTable = new mongoose.Schema({     
     Name :
     {
         type: String,
@@ -13,7 +8,7 @@ const PagesGeneralTable = new mongoose.Schema({
     },
     Body :
     {
-        type: String,
+        type: Date,
         required : true
     },
     Status :

@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const OneColumnBannerTable = new mongoose.Schema({  
-    OneColumn_Id :
-    {
-        type: String,
-        required : true
-    },   
+const OneColumnBannerTable = new mongoose.Schema({     
     SectionStatus :
     {
         type: String,

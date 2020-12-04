@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const StoreFrontNewsletterTable = new mongoose.Schema({     
-    NewsLetter_Id :
-    {
-        type: String,
-        required : true
-    },
     BackgroundImage :
     {
         type: String,

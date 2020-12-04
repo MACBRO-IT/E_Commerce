@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const SettingCustomCSSJSTable = new mongoose.Schema({     
-    Custom_Id :
-    {
-        type: String,
-        required : true
-    },
     Header :
     {
         type: String,

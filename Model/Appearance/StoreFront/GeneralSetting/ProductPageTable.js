@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const StoreFrontProductTable = new mongoose.Schema({  
-    ProductPage_Id :
-    {
-        type: String,
-        required : true
-    },   
+const StoreFrontProductTable = new mongoose.Schema({     
     CalltoActionURL :
     {
         type: String,

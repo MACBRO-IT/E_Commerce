@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const SettingGoogleTable = new mongoose.Schema({     
-    Google_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,

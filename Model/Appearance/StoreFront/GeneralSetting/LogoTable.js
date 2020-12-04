@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const StoreFrontLogoTable = new mongoose.Schema({     
-    Logo_Id :
-    {
-        type: String,
-        required : true
-    },
     Favicon :
     {
         type: String,

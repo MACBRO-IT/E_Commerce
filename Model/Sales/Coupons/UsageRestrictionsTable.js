@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const CouponsUsageRestrictionsTable = new mongoose.Schema({  
-    UsageRestrictions_Id :
-    {
-        type: Number,
-        required : true
-    },   
+const CouponsUsageRestrictionsTable = new mongoose.Schema({     
     MinimumSpend :
     {
         type: Number,

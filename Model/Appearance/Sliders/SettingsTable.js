@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const SlidersSettingsTable = new mongoose.Schema({  
-    Settings_Id :
-    {
-        type: String,
-        required : true
-    },   
+const SlidersSettingsTable = new mongoose.Schema({     
     Name :
     {
         type: String,

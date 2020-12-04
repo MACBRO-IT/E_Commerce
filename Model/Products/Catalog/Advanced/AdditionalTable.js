@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const CatalogAdvancedAdditionalTable = new mongoose.Schema({    
-    Additional_Id :
-    {
-        type: String,
-        required : true
-    }, 
+const CatalogAdvancedAdditionalTable = new mongoose.Schema({     
     ShortDescription :
     {
         type: String,

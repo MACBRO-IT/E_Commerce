@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const TwocolumnbannersTable = new mongoose.Schema({   
-    TwoColumn_Id :
-    {
-        type: String,
-        required : true
-    },
+const TwocolumnbannersTable = new mongoose.Schema({     
     SectionStatus :
     {
         type: String,

@@ -4,7 +4,7 @@ const BrandsSEOTable = new mongoose.Schema({
     MetaURL :
     {
         type: String,
-        required : true
+       
     },
     MetaTitle :
     {

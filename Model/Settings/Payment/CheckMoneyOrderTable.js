@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const CheckMoneyOrderTable = new mongoose.Schema({     
-    Money_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,

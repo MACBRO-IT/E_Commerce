@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
-const InstamojoTable = new mongoose.Schema({    
-    Instamoj_Id :
-    {
-        type: String,
-        required : true
-    }, 
+const InstamojoTable = new mongoose.Schema({     
     Status :
     {
         type: String,

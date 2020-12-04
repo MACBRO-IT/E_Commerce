@@ -1,11 +1,6 @@
 const mongoose =require("mongoose");
 
 const StripeTable = new mongoose.Schema({     
-    Stripe_Id :
-    {
-        type: String,
-        required : true
-    },
     Status :
     {
         type: String,
